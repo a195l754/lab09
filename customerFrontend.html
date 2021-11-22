@@ -1,0 +1,31 @@
+<html> 
+  <head>
+    <script type="text/javascript" src="formChecker.js"> 
+    </script>
+    <link href="style.css" 
+	  rel="stylesheet" 
+	  type="text/css"/>
+  </head> 
+  <body> 
+    <form onsubmit="checkin()" form action="customerBackend.php" method="post"> 
+      Username: <input type="text" name="name" id="name">
+      Password: <input type="text" name="pass" id="pass"><br>
+      <p> Selling Chocolate </p>
+      Chocolate<br>
+      Quantity: <input type="text" name="i1" id="i1"><br>
+      Chocolate with nuts<br>
+      Quantity: <input type="text" name="i2" id="i2"><br>
+      Chocolate with peanut butter<br>
+      Quantity: <input type="text" name="i3" id="i3"><br>
+      <p>Desired Shipping:</p>
+      <input type="radio" id="0" name="ship" value="0">
+      <label for="0">Free 7 day</label>
+      <input type="radio" id="5" name="ship" value="5">
+      <label for="5">$5 3 day</label>
+      <input type="radio" id="50" name="ship" value="50">
+      <label for="50">$50 overnight</label><br>
+      <br><input type="submit" value="Proceed with Purchase">
+    </form>
+    <br><a href="https://people.eecs.ku.edu/~a195l754/customerFrontend.html"> Reset Page </a><br>
+  </body> 
+</html> 
